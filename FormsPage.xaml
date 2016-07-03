@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SQLiteTutorial.FormsPage">
+
+  <ContentPage.Content>
+    <StackLayout Padding="20">
+      <Label Text="Name" FontSize="25"/>
+      <Entry x:Name="memberName" Placeholder="Enter Name"></Entry>
+      <Label Text="Age" FontSize="25"/>
+      <Entry x:Name="memberAge" Placeholder="Enter Age"></Entry>
+      
+      <StackLayout Orientation="Horizontal">
+        <Button Text="Insert Members" BackgroundColor="Gray" TextColor="White" Clicked="InsertMember"/>
+        <Button Text="Show Memebrs" BackgroundColor="Maroon" TextColor="White" Clicked="ShowMembers"/>
+      </StackLayout>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
